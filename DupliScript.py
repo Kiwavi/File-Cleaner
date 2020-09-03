@@ -5,7 +5,7 @@ import os
 import re
 import string
 
-""" This script will pass through the /Muziki/roots folder and delete duplicate files. Tired of songs repeating themselves. It is supposed to rename files beginning with digits removing the digits, remove one if two files have the same size in terms of kilobytes, remove files ending with .part(means they were partially downloaded), remove files with (1). or any other number since it means they are just copies of others,"""
+""" This script will pass through the folder(normally the cwd) and delete duplicate files,unfinished downloads. It also renames files that begin with digits. It is supposed to rename files beginning with digits removing the digits, remove one if two files have the same size in terms of kilobytes, remove files ending with .part(means they were partially downloaded), remove files with (1). or any other number since it means they are just copies of others,"""
 
 files = os.listdir(os.getcwd())
 
